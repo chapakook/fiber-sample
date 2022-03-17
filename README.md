@@ -24,6 +24,7 @@ mysql use
 server start
 ```
 cd login-web
+sh docker/setDB.sh
 go run main.go
 ```
 
@@ -38,3 +39,4 @@ curl -u winter:010101 localhost:3000
 // Unauthorized
 curl -u foo:bar localhost:3000
 ```
+-----

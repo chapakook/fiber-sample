@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  guradb:
+    container_name: guradb
+    build:
+      context: .
+      dockerfile: DockerFile
+    ports:
+      - 3306:3306

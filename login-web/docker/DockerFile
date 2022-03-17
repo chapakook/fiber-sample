@@ -1,0 +1,8 @@
+FROM mariadb
+
+ENV MYSQL_ROOT_PASSWORD root
+
+WORKDIR /etc/mysql/
+RUN mkdir setDB
+
+COPY ./setDB.sql /etc/mysql/setDB/setDB.sql
