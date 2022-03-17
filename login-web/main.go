@@ -28,7 +28,7 @@ func main() {
 
 	app := fiber.New()
 	middleware.BasicAuth(app, config)
-	app.Get("/", func(c *fiber.Ctx) error { return c.SendString("Welcome") })
+	app.Get("/", func(c *fiber.Ctx) error { return c.SendString("Welcome\n") })
 
 	app.Listen(":3000")
 }
