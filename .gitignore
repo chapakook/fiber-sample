@@ -63,7 +63,9 @@ Temporary Items
 
 # Chapakook made
 
+# test
 test.*
 *.test
+test/
 
 
